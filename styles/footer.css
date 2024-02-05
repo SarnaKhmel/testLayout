@@ -1,0 +1,62 @@
+@import "./general.css";
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 400;
+  max-width: 719px;
+  height: 40px;
+  margin: 20px;
+}
+
+@media (max-width: 991px) {
+  .footer-content {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-btn {
+  border: none;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--blue);
+  flex-grow: 1;
+  color: var(--white);
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 0.08px;
+  padding: 8px 24px;
+  font: 16px/150% Roboto, sans-serif;
+  max-width: 320px;
+}
+
+@media (max-width: 991px) {
+  .footer-btn {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
+.footer-description {
+  color: var(--dark-blue);
+  letter-spacing: 0.04px;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+  font: 14px/18px Roboto, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .footer-description {
+    max-width: 100%;
+    text-align: center;
+  }
+}

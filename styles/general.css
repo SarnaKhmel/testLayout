@@ -1,0 +1,34 @@
+:root {
+  --white: #ffffff;
+  --light-blue: #3498db;
+  --light-blue-2: #aed1ff;
+  --light-blue-3: #e2f2ff;
+  --blue: #5d78ff;
+  --dark-blue: #001e41;
+  --light-grey: #e5e5e5;
+  --grey: #909090;
+  --dark-grey: #7d7d7d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Source Sans Pro, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin: 80px 20px 20px 20px;
+  padding-top: 20px;
+  max-width: 1920px;
+}
+
+.block {
+  height: 90vh;
+  width: 100%;
+  background-color: lightgray;
+}

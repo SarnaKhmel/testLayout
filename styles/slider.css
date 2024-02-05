@@ -1,0 +1,128 @@
+@import "./general.css";
+
+.slider {
+  margin: 50px 0;
+}
+
+.slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-header-title {
+  color: var(--gray, #909090);
+  font: 400 26px Roboto, sans-serif;
+}
+.gray-text {
+  color: rgba(144, 144, 144, 1);
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  border: none;
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  font-size: 0;
+  background-color: var(--blue, #5d78ff);
+}
+
+.slick-arrow.slick-prev {
+  background-image: url(../assets/arrowL.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  margin-right: 5px;
+}
+.slick-arrow.slick-next {
+  background-image: url(../assets/arrowR.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slick-dots button {
+  border: none;
+  font-size: 0;
+  height: 10px;
+  width: 10px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: var(--blue, #5d78ff);
+}
+
+.slider-item {
+  border-radius: 10px;
+  background-color: #f8f8fa;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0%;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  position: relative;
+}
+
+.slider-item-header {
+  font: 700 16px/24px Roboto, sans-serif;
+}
+
+.slider-item-content {
+  letter-spacing: 0.04px;
+  margin-top: 20px;
+  font: 400 14px/21px Roboto, sans-serif;
+  margin-bottom: 100px;
+}
+
+.slider-item-number {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100px;
+  width: 100px;
+  border-radius: 100% 0% 10px 90% / 100% 90% 10px 0%;
+  justify-content: center;
+  color: #fff;
+  background-color: #e3eeff;
+  font: 900 48px/100% Roboto, sans-serif;
+}
+
+.slider-dots {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .slider-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+  }
+}
