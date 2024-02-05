@@ -65,6 +65,9 @@
   line-height: 150%;
   padding: 8px 24px;
 }
+.column-header-2 {
+  margin-top: 20px;
+}
 
 .column-images {
   margin-top: 10px;
@@ -137,5 +140,9 @@
   .banner__img {
     max-width: 100%;
     margin-top: 22px;
+  }
+
+  .column-images {
+    flex-wrap: wrap;
   }
 }
